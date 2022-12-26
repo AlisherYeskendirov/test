@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Shop</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20221226205138">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap&_v=20221226205138" rel="stylesheet">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header data-scroll="0.1" data-scroll-show class="header">
+			<div class="header__container">
+				<a href="" class="header__logo logo _icon-logo"></a>
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="home.html" class="menu__link menu__link">Главная</a></li>
+							<li class="menu__item"><a href="shop.html" class="menu__link_active">Магазин</a></li>
+							<li class="menu__item"><a href="brand.html" class="menu__link">Блог</a></li>
+							<li class="menu__item"><a href="contacts.html" class="menu__link">Контакты</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__actions actions-header">
+					<div data-da=".menu__body, 478" class="actions-header__phone">
+						<a href="#" data-popup="#popup" class="actions-header__icon-phone _icon-phone"></a>
+						<a href="tel:+74958235412" class="actions-header__link-phone">+7 (495) 823-54-12</a>
+					</div>
+					<a href="" class="actions-header__cart _icon-cart"></a>
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+				</div>
+			</div>
+		</header>
+		<div id="popup" aria-hidden="true" class="popup">
+			<div class="popup__wrapper main-popup__wrapper">
+				<div class="popup__content main-popup__content">
+					<button data-close type="button" class="popup__close main-popup__close"><img src="img/close.svg" alt=""></button>
+					<h3 class="popup__title main-popup__title">
+						Заказать обратный звонок
+					</h3>
+					<form data-dev data-popup-message="#form-message" id="form" class="popup__form main-popup__form">
+						<div class="form__item">
+							<input data-required autocomplete="off" type="text" name="form[name]" data-error="Ошибка" placeholder="Имя" class="form__input">
+						</div>
+						<div class="form__item">
+							<input data-required="email" autocomplete="off" type="text" name="form[email]" data-error="Ошибка" placeholder="E-mail" class="form__input">
+						</div>
+						<div class="form__item">
+							<input data-required autocomplete="off" type="text" name="form[telephone]" data-error="Ошибка" placeholder="Телефон" class="form__input">
+						</div>
+						<button type="submit" class="form__button">Заказать звонок</button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div id="form-message" aria-hidden="true" class="popup">
+			<div class="popup__wrapper form-message__wrapper">
+				<div class="popup__content form-message__content">
+					<h3 class="popup__title form-message__title">
+						Отлично! Мы скоро вам перезвоним.
+					</h3>
+					<div class="form-message__button">
+						<button data-close type="button" class="form-message__close">Закрыть</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<main class="page">
+			<section class="page__shop shop-section">
+				<div class="shop-section__container">
+					<h1 class="shop-section__title title-h1">Магазин</h1>
+					<nav class="breadcrumb" aria-label="Breadcrumb">
+						<ul class="breadcrumb__list">
+							<li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></li>
+							<li class="breadcrumbs__item"><span aria-current="page">Магазин</span></li>
+						</ul>
+					</nav>
+					<div class="tabs">
+						<div data-tabs data-tabs-animate="400" class="tabs">
+							<nav data-tabs-titles class="tabs__navigation">
+								<button type="button" class="tabs__title _tab-active">Все</button>
+								<button type="button" class="tabs__title">Футболки</button>
+								<button type="button" class="tabs__title">Свитшоты</button>
+								<button type="button" class="tabs__title">Купальники</button>
+								<button type="button" class="tabs__title">Толстовки</button>
+							</nav>
+							<span class="products-value__top">Показано: 9 из 12 товаров</span>
+							<div data-tabs-body class="tabs__content">
+								<div class="tabs__body ">
+									<div class="items">
+										<div class="item">
+											<div class="item__image">
+												<a href="#" class="item__image-link">
+													<picture><source srcset="img/collection/01.webp" type="image/webp"><img src="img/collection/01.png" alt=""></picture>
+												</a>
+											</div>
+											<div class="item__product-title">
+												<a href="" class="item__product-titlelink">Футболка USA</a>
+											</div>
+											<span class="item__price">$129</span>
+										</div>
+										<div class="item">
+											<div class="item__image">
+												<a href="#" class="item__image-link">
+													<picture><source srcset="img/collection/02.webp" type="image/webp"><img src="img/collection/02.png" alt=""></picture>
+												</a>
+											</div>
+											<div class="item__product-title">
+												<a href="" class="item__product-titlelink">Купальник Glow</a>
+											</div>
+											<span class="item__price">$129</span>
+										</div>
+										<div class="item">
+											<div class="item__image">
+												<a href="#" class="item__image-link">
+													<picture><source srcset="img/collection/03.webp" type="image/webp"><img src="img/collection/03.png" alt=""></picture>
+												</a>
+											</div>
+											<div class="item__product-title">
+												<a href="" class="item__product-titlelink">Свитшот Sweet Shot</a>
+											</div>
+											<span class="item__price">$129</span>
+										</div>
+										<div class="item">
+											<div class="item__image">
+												<a href="#" class="item__image-link">
+													<picture><source srcset="img/collection/01.webp" type="image/webp"><img src="img/collection/01.png" alt=""></picture>
+												</a>
+											</div>
+											<div class="item__product-title">
+												<a href="" class="item__product-titlelink">Футболка USA</a>
+											</div>
+											<span class="item__price">$129</span>
+										</div>
+										<div class="item">
+											<div class="item__image">
+												<a href="#" class="item__image-link">
+													<picture><source srcset="img/collection/02.webp" type="image/webp"><img src="img/collection/02.png" alt=""></picture>
+												</a>
+											</div>
+											<div class="item__product-title">
+												<a href="" class="item__product-titlelink">Купальник Glow</a>
+											</div>
+											<span class="item__price">$129</span>
+										</div>
+										<div class="item">
+											<div class="item__image">
+												<a href="#" class="item__image-link">
+													<picture><source srcset="img/collection/03.webp" type="image/webp"><img src="img/collection/03.png" alt=""></picture>
+												</a>
+											</div>
+											<div class="item__product-title">
+												<a href="" class="item__product-titlelink">Свитшот Sweet Shot</a>
+											</div>
+											<span class="item__price">$129</span>
+										</div>
+										<div class="item">
+											<div class="item__image">
+												<a href="#" class="item__image-link">
+													<picture><source srcset="img/collection/01.webp" type="image/webp"><img src="img/collection/01.png" alt=""></picture>
+												</a>
+											</div>
+											<div class="item__product-title">
+												<a href="" class="item__product-titlelink">Футболка USA</a>
+											</div>
+											<span class="item__price">$129</span>
+										</div>
+										<div class="item">
+											<div class="item__image">
+												<a href="#" class="item__image-link">
+													<picture><source srcset="img/collection/02.webp" type="image/webp"><img src="img/collection/02.png" alt=""></picture>
+												</a>
+											</div>
+											<div class="item__product-title">
+												<a href="" class="item__product-titlelink">Купальник Glow</a>
+											</div>
+											<span class="item__price">$129</span>
+										</div>
+										<div class="item">
+											<div class="item__image">
+												<a href="#" class="item__image-link">
+													<picture><source srcset="img/collection/03.webp" type="image/webp"><img src="img/collection/03.png" alt=""></picture>
+												</a>
+											</div>
+											<div class="item__product-title">
+												<a href="" class="item__product-titlelink">Свитшот Sweet Shot</a>
+											</div>
+											<span class="item__price">$129</span>
+										</div>
+									</div>
+								</div>
+								<div class="tabs__body">
+									<div class="items">
+										<div class="item">
+											<div class="item__image">
+												<a href="#" class="item__image-link">
+													<picture><source srcset="img/collection/01.webp" type="image/webp"><img src="img/collection/01.png" alt=""></picture>
+												</a>
+											</div>
+											<div class="item__product-title">
+												<a href="" class="item__product-titlelink">Футболка USA</a>
+											</div>
+											<span class="item__price">$129</span>
+										</div>
+										<div class="item">
+											<div class="item__image">
+												<a href="#" class="item__image-link">
+													<picture><source srcset="img/collection/01.webp" type="image/webp"><img src="img/collection/01.png" alt=""></picture>
+												</a>
+											</div>
+											<div class="item__product-title">
+												<a href="" class="item__product-titlelink">Футболка USA</a>
+											</div>
+											<span class="item__price">$129</span>
+										</div>
+										<div class="item">
+											<div class="item__image">
+												<a href="#" class="item__image-link">
+													<picture><source srcset="img/collection/01.webp" type="image/webp"><img src="img/collection/01.png" alt=""></picture>
+												</a>
+											</div>
+											<div class="item__product-title">
+												<a href="" class="item__product-titlelink">Футболка USA</a>
+											</div>
+											<span class="item__price">$129</span>
+										</div>
+										<div class="item">
+											<div class="item__image">
+												<a href="#" class="item__image-link">
+													<picture><source srcset="img/collection/01.webp" type="image/webp"><img src="img/collection/01.png" alt=""></picture>
+												</a>
+											</div>
+											<div class="item__product-title">
+												<a href="" class="item__product-titlelink">Футболка USA</a>
+											</div>
+											<span class="item__price">$129</span>
+										</div>
+										<div class="item">
+											<div class="item__image">
+												<a href="#" class="item__image-link">
+													<picture><source srcset="img/collection/01.webp" type="image/webp"><img src="img/collection/01.png" alt=""></picture>
+												</a>
+											</div>
+											<div class="item__product-title">
+												<a href="" class="item__product-titlelink">Футболка USA</a>
+											</div>
+											<span class="item__price">$129</span>
+										</div>
+										<div class="item">
+											<div class="item__image">
+												<a href="#" class="item__image-link">
+													<picture><source srcset="img/collection/01.webp" type="image/webp"><img src="img/collection/01.png" alt=""></picture>
+												</a>
+											</div>
+											<div class="item__product-title">
+												<a href="" class="item__product-titlelink">Футболка USA</a>
+											</div>
+											<span class="item__price">$129</span>
+										</div>
+										<div class="item">
+											<div class="item__image">
+												<a href="#" class="item__image-link">
+													<picture><source srcset="img/collection/01.webp" type="image/webp"><img src="img/collection/01.png" alt=""></picture>
+												</a>
+											</div>
+											<div class="item__product-title">
+												<a href="" class="item__product-titlelink">Футболка USA</a>
+											</div>
+											<span class="item__price">$129</span>
+										</div>
+										<div class="item">
+											<div class="item__image">
+												<a href="#" class="item__image-link">
+													<picture><source srcset="img/collection/01.webp" type="image/webp"><img src="img/collection/01.png" alt=""></picture>
+												</a>
+											</div>
+											<div class="item__product-title">
+												<a href="" class="item__product-titlelink">Футболка USA</a>
+											</div>
+											<span class="item__price">$129</span>
+										</div>
+										<div class="item">
+											<div class="item__image">
+												<a href="#" class="item__image-link">
+													<picture><source srcset="img/collection/01.webp" type="image/webp"><img src="img/collection/01.png" alt=""></picture>
+												</a>
+											</div>
+											<div class="item__product-title">
+												<a href="" class="item__product-titlelink">Футболка USA</a>
+											</div>
+											<span class="item__price">$129</span>
+										</div>
+									</div>
+								</div>
+								<div class="tabs__body">
+									<div class="items">
+										<div class="item">
+											<div class="item__image">
+												<a href="#" class="item__image-link">
+													<picture><source srcset="img/collection/03.webp" type="image/webp"><img src="img/collection/03.png" alt=""></picture>
+												</a>
+											</div>
+											<div class="item__product-title">
+												<a href="" class="item__product-titlelink">Свитшот Sweet Shot</a>
+											</div>
+											<span class="item__price">$129</span>
+										</div>
+										<div class="item">
+											<div class="item__image">
+												<a href="#" class="item__image-link">
+													<picture><source srcset="img/collection/03.webp" type="image/webp"><img src="img/collection/03.png" alt=""></picture>
+												</a>
+											</div>
+											<div class="item__product-title">
+												<a href="" class="item__product-titlelink">Свитшот Sweet Shot</a>
+											</div>
+											<span class="item__price">$129</span>
+										</div>
+										<div class="item">
+											<div class="item__image">
+												<a href="#" class="item__image-link">
+													<picture><source srcset="img/collection/03.webp" type="image/webp"><img src="img/collection/03.png" alt=""></picture>
+												</a>
+											</div>
+											<div class="item__product-title">
+												<a href="" class="item__product-titlelink">Свитшот Sweet Shot</a>
+											</div>
+											<span class="item__price">$129</span>
+										</div>
+										<div class="item">
+											<div class="item__image">
+												<a href="#" class="item__image-link">
+													<picture><source srcset="img/collection/03.webp" type="image/webp"><img src="img/collection/03.png" alt=""></picture>
+												</a>
+											</div>
+											<div class="item__product-title">
+												<a href="" class="item__product-titlelink">Свитшот Sweet Shot</a>
+											</div>
+											<span class="item__price">$129</span>
+										</div>
+										<div class="item">
+											<div class="item__image">
+												<a href="#" class="item__image-link">
+													<picture><source srcset="img/collection/03.webp" type="image/webp"><img src="img/collection/03.png" alt=""></picture>
+												</a>
+											</div>
+											<div class="item__product-title">
+												<a href="" class="item__product-titlelink">Свитшот Sweet Shot</a>
+											</div>
+											<span class="item__price">$129</span>
+										</div>
+										<div class="item">
+											<div class="item__image">
+												<a href="#" class="item__image-link">
+													<picture><source srcset="img/collection/03.webp" type="image/webp"><img src="img/collection/03.png" alt=""></picture>
+												</a>
+											</div>
+											<div class="item__product-title">
+												<a href="" class="item__product-titlelink">Свитшот Sweet Shot</a>
+											</div>
+											<span class="item__price">$129</span>
+										</div>
+										<div class="item">
+											<div class="item__image">
+												<a href="#" class="item__image-link">
+													<picture><source srcset="img/collection/03.webp" type="image/webp"><img src="img/collection/03.png" alt=""></picture>
+												</a>
+											</div>
+											<div class="item__product-title">
+												<a href="" class="item__product-titlelink">Свитшот Sweet Shot</a>
+											</div>
+											<span class="item__price">$129</span>
+										</div>
+										<div class="item">
+											<div class="item__image">
+												<a href="#" class="item__image-link">
+													<picture><source srcset="img/collection/03.webp" type="image/webp"><img src="img/collection/03.png" alt=""></picture>
+												</a>
+											</div>
+											<div class="item__product-title">
+												<a href="" class="item__product-titlelink">Свитшот Sweet Shot</a>
+											</div>
+											<span class="item__price">$129</span>
+										</div>
+										<div class="item">
+											<div class="item__image">
+												<a href="#" class="item__image-link">
+													<picture><source srcset="img/collection/03.webp" type="image/webp"><img src="img/collection/03.png" alt=""></picture>
+												</a>
+											</div>
+											<div class="item__product-title">
+												<a href="" class="item__product-titlelink">Свитшот Sweet Shot</a>
+											</div>
+											<span class="item__price">$129</span>
+										</div>
+									</div>
+								</div>
+								<div class="tabs__body">
+									<div class="items">
+										<div class="item">
+											<div class="item__image">
+												<a href="#" class="item__image-link">
+													<picture><source srcset="img/collection/02.webp" type="image/webp"><img src="img/collection/02.png" alt=""></picture>
+												</a>
+											</div>
+											<div class="item__product-title">
+												<a href="" class="item__product-titlelink">Купальник Glow</a>
+											</div>
+											<span class="item__price">$129</span>
+										</div>
+										<div class="item">
+											<div class="item__image">
+												<a href="#" class="item__image-link">
+													<picture><source srcset="img/collection/02.webp" type="image/webp"><img src="img/collection/02.png" alt=""></picture>
+												</a>
+											</div>
+											<div class="item__product-title">
+												<a href="" class="item__product-titlelink">Купальник Glow</a>
+											</div>
+											<span class="item__price">$129</span>
+										</div>
+										<div class="item">
+											<div class="item__image">
+												<a href="#" class="item__image-link">
+													<picture><source srcset="img/collection/02.webp" type="image/webp"><img src="img/collection/02.png" alt=""></picture>
+												</a>
+											</div>
+											<div class="item__product-title">
+												<a href="" class="item__product-titlelink">Купальник Glow</a>
+											</div>
+											<span class="item__price">$129</span>
+										</div>
+										<div class="item">
+											<div class="item__image">
+												<a href="#" class="item__image-link">
+													<picture><source srcset="img/collection/02.webp" type="image/webp"><img src="img/collection/02.png" alt=""></picture>
+												</a>
+											</div>
+											<div class="item__product-title">
+												<a href="" class="item__product-titlelink">Купальник Glow</a>
+											</div>
+											<span class="item__price">$129</span>
+										</div>
+										<div class="item">
+											<div class="item__image">
+												<a href="#" class="item__image-link">
+													<picture><source srcset="img/collection/02.webp" type="image/webp"><img src="img/collection/02.png" alt=""></picture>
+												</a>
+											</div>
+											<div class="item__product-title">
+												<a href="" class="item__product-titlelink">Купальник Glow</a>
+											</div>
+											<span class="item__price">$129</span>
+										</div>
+										<div class="item">
+											<div class="item__image">
+												<a href="#" class="item__image-link">
+													<picture><source srcset="img/collection/02.webp" type="image/webp"><img src="img/collection/02.png" alt=""></picture>
+												</a>
+											</div>
+											<div class="item__product-title">
+												<a href="" class="item__product-titlelink">Купальник Glow</a>
+											</div>
+											<span class="item__price">$129</span>
+										</div>
+										<div class="item">
+											<div class="item__image">
+												<a href="#" class="item__image-link">
+													<picture><source srcset="img/collection/02.webp" type="image/webp"><img src="img/collection/02.png" alt=""></picture>
+												</a>
+											</div>
+											<div class="item__product-title">
+												<a href="" class="item__product-titlelink">Купальник Glow</a>
+											</div>
+											<span class="item__price">$129</span>
+										</div>
+										<div class="item">
+											<div class="item__image">
+												<a href="#" class="item__image-link">
+													<picture><source srcset="img/collection/02.webp" type="image/webp"><img src="img/collection/02.png" alt=""></picture>
+												</a>
+											</div>
+											<div class="item__product-title">
+												<a href="" class="item__product-titlelink">Купальник Glow</a>
+											</div>
+											<span class="item__price">$129</span>
+										</div>
+										<div class="item">
+											<div class="item__image">
+												<a href="#" class="item__image-link">
+													<picture><source srcset="img/collection/02.webp" type="image/webp"><img src="img/collection/02.png" alt=""></picture>
+												</a>
+											</div>
+											<div class="item__product-title">
+												<a href="" class="item__product-titlelink">Купальник Glow</a>
+											</div>
+											<span class="item__price">$129</span>
+										</div>
+									</div>
+								</div>
+								<div class="tabs__body">
+									Толстовки
+								</div>
+							</div>
+							<span class="products-value__bottom">Показано: 9 из 12 товаров</span>
+						</div>
+					</div>
+					<div class="pagging">
+						<a href="" class="pagging__arrow"></a>
+						<ul class="pagging__list">
+							<li>
+								<a href="#" class="pagging__item _active">1</a>
+							</li>
+							<li>
+								<a href="#" class="pagging__item">2</a>
+							</li>
+						</ul>
+						<a href="#" class="pagging__arrow">
+							<img src="img/team/arrow-right.svg" alt="arrow">
+						</a>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__info">
+					<a href="" class="footer__logo  logo _icon-logo"></a>
+					<ul class="footer__rights rights">
+						<li class="rights__item">© Все права защищены</li>
+						<li class="rights__item">Политика конфиденциальности</li>
+						<li class="rights__item">Публичная оферта</li>
+					</ul>
+				</div>
+				<div class="footer__menu menu">
+					<nav class="footer-menu__body menu__body">
+						<ul class="footer-menu__list menu__list">
+							<li class="footer-menu__item menu__item"><a href="" class="footer-menu__link_active menu__link">Главная</a></li>
+							<li class="footer-menu__item menu__item">
+								<a href="" class="footer-menu__link menu__link">Магазин</a>
+								<ul class="sub-menu__list">
+									<li class="sub-menu__item">
+										<a href="#" class="sub-menu__link">Пальто</a>
+									</li>
+									<li class="sub-menu__item">
+										<a href="#" class="sub-menu__link">Свитшоты</a>
+									</li>
+									<li class="sub-menu__item">
+										<a href="#" class="sub-menu__link">Кардиганы</a>
+									</li>
+									<li class="sub-menu__item">
+										<a href="#" class="sub-menu__link">Толстовки</a>
+									</li>
+								</ul>
+							</li>
+							<li class="footer-menu__item menu__item"><a href="" class="footer-menu__link menu__link">О бренде</a>
+							</li>
+							<li class="footer-menu__item menu__item"><a href="" class="footer-menu__link menu__link">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="footer__contacts contacts">
+					<a href="tel:+74958235412" class="contacts__phone">+7 (495) 823-54-12</a>
+					<a href="mailto:hello@womazing.com" class="contacts__mail">hello@womazing.com</a>
+					<div class="contacts__social">
+						<a href="" class="contacts__social-link _icon-instagram"></a>
+						<a href="" class="contacts__social-link _icon-facebook"></a>
+						<a href="" class="contacts__social-link _icon-twitter"></a>
+					</div>
+					<img class="contacts__visa" src="img/visa-mastercard.svg" alt="pic">
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20221226205138"></script>
+</body>
+
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Contacts</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20221226205138">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap&_v=20221226205138" rel="stylesheet">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header data-scroll="0.1" data-scroll-show class="header">
+			<div class="header__container">
+				<a href="" class="header__logo logo _icon-logo"></a>
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="home.html" class="menu__link menu__link">Главная</a></li>
+							<li class="menu__item"><a href="shop.html" class="menu__link">Магазин</a></li>
+							<li class="menu__item"><a href="brand.html" class="menu__link">Блог</a></li>
+							<li class="menu__item"><a href="contacts.html" class="menu__link_active">Контакты</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__actions actions-header">
+					<div data-da=".menu__body, 478" class="actions-header__phone">
+						<a href="#" data-popup="#popup" class="actions-header__icon-phone _icon-phone"></a>
+						<a href="tel:+74958235412" class="actions-header__link-phone">+7 (495) 823-54-12</a>
+					</div>
+					<a href="" class="actions-header__cart _icon-cart"></a>
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+				</div>
+			</div>
+		</header>
+		<div id="popup" aria-hidden="true" class="popup">
+			<div class="popup__wrapper main-popup__wrapper">
+				<div class="popup__content main-popup__content">
+					<button data-close type="button" class="popup__close main-popup__close"><img src="img/close.svg" alt=""></button>
+					<h3 class="popup__title main-popup__title">
+						Заказать обратный звонок
+					</h3>
+					<form data-dev data-popup-message="#form-message" id="form" class="popup__form main-popup__form">
+						<div class="form__item">
+							<input data-required autocomplete="off" type="text" name="form[name]" data-error="Ошибка" placeholder="Имя" class="form__input">
+						</div>
+						<div class="form__item">
+							<input data-required="email" autocomplete="off" type="text" name="form[email]" data-error="Ошибка" placeholder="E-mail" class="form__input">
+						</div>
+						<div class="form__item">
+							<input data-required autocomplete="off" type="text" name="form[telephone]" data-error="Ошибка" placeholder="Телефон" class="form__input">
+						</div>
+						<button type="submit" class="form__button">Заказать звонок</button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div id="form-message" aria-hidden="true" class="popup">
+			<div class="popup__wrapper form-message__wrapper">
+				<div class="popup__content form-message__content">
+					<h3 class="popup__title form-message__title">
+						Отлично! Мы скоро вам перезвоним.
+					</h3>
+					<div class="form-message__button">
+						<button data-close type="button" class="form-message__close">Закрыть</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<main class="page">
+			<section class="page__contacts contacts-section">
+				<div class="contacts-section__container">
+					<h1 class="contacts-section__title title-h1">Контакты</h1>
+					<nav class="breadcrumb" aria-label="Breadcrumb">
+						<ul class="breadcrumb__list">
+							<li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></li>
+							<li class="breadcrumbs__item"><span aria-current="page">Контакты</span></li>
+						</ul>
+					</nav>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d92366.44674418533!2d51.16346343648956!3d43.6595797500026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2skz!4v1671047561323!5m2!1sru!2skz" width="100%" height="476" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+					</iframe>
+					<div class="contacts-section__contacts-details contacts-details">
+						<div class="contacts-details__contacts">
+							<div class="contacts-details__label">Телефон</div>
+							<a href="tel:+74958235412" class="contacts-details__link">+7 (495) 823-54-12</a>
+						</div>
+						<div class="contacts-details__contacts">
+							<div class="contacts-details__label">E-mail</div>
+							<a href="mailto:info@sitename.com" class="contacts-details__link">info@sitename.com</a>
+						</div>
+						<div class="contacts-details__contacts">
+							<div class="contacts-details__label">Адрес</div>
+							<div class="contacts-details__link">г. Москва, 3-я улица Строителей, 25</div>
+						</div>
+					</div>
+					<h3 class="contacts-section__sub-title title-h3">Напишите нам</h3>
+					<form data-dev class="contacts__form">
+						<div class="contacts-form__item">
+							<input data-required="name" autocomplete="off" type="text" name="form[name]" data-error="" placeholder="Имя" class="contacts-form__input">
+						</div>
+						<div class="contacts-form__item">
+							<input data-required="email" autocomplete="off" type="text" name="form[email]" data-error="" placeholder="E-mail" class="contacts-form__input">
+						</div>
+						<div class="contacts-form__item">
+							<input data-required="tel" autocomplete="off" type="text" name="form[telephone]" data-error="" placeholder="Телефон" class="contacts-form__input">
+						</div>
+						<div class="contacts-form__item">
+							<textarea autocomplete="off" name="form[textarea]" placeholder="Сообщение" data-error="" data-autoheight class="contacts-form__textarea"></textarea>
+						</div>
+						<button type="submit" class="contacts-form__button btn">Отправить</button>
+					</form>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__info">
+					<a href="" class="footer__logo  logo _icon-logo"></a>
+					<ul class="footer__rights rights">
+						<li class="rights__item">© Все права защищены</li>
+						<li class="rights__item">Политика конфиденциальности</li>
+						<li class="rights__item">Публичная оферта</li>
+					</ul>
+				</div>
+				<div class="footer__menu menu">
+					<nav class="footer-menu__body menu__body">
+						<ul class="footer-menu__list menu__list">
+							<li class="footer-menu__item menu__item"><a href="" class="footer-menu__link_active menu__link">Главная</a></li>
+							<li class="footer-menu__item menu__item">
+								<a href="" class="footer-menu__link menu__link">Магазин</a>
+								<ul class="sub-menu__list">
+									<li class="sub-menu__item">
+										<a href="#" class="sub-menu__link">Пальто</a>
+									</li>
+									<li class="sub-menu__item">
+										<a href="#" class="sub-menu__link">Свитшоты</a>
+									</li>
+									<li class="sub-menu__item">
+										<a href="#" class="sub-menu__link">Кардиганы</a>
+									</li>
+									<li class="sub-menu__item">
+										<a href="#" class="sub-menu__link">Толстовки</a>
+									</li>
+								</ul>
+							</li>
+							<li class="footer-menu__item menu__item"><a href="" class="footer-menu__link menu__link">О бренде</a>
+							</li>
+							<li class="footer-menu__item menu__item"><a href="" class="footer-menu__link menu__link">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="footer__contacts contacts">
+					<a href="tel:+74958235412" class="contacts__phone">+7 (495) 823-54-12</a>
+					<a href="mailto:hello@womazing.com" class="contacts__mail">hello@womazing.com</a>
+					<div class="contacts__social">
+						<a href="" class="contacts__social-link _icon-instagram"></a>
+						<a href="" class="contacts__social-link _icon-facebook"></a>
+						<a href="" class="contacts__social-link _icon-twitter"></a>
+					</div>
+					<img class="contacts__visa" src="img/visa-mastercard.svg" alt="pic">
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20221226205138"></script>
+</body>
+
+</html>
